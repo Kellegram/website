@@ -1,0 +1,30 @@
+---
+import "../styles/modern-normalize.css";
+import "../styles/critical.css";
+import "../styles/navbars.css";
+import NavMobile from "../components/NavMobile.astro";
+---
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Yapping Zone</title>
+    </head>
+    <body>
+        <div class="page-container flexbox">
+            <header>
+                <h1>KELLEGRAM'S LAIR</h1>
+            </header>
+            <div class="content-container flexbox">
+                <div class="sidebar">Sidebar</div>
+                <div class="content">
+                    <main>Main</main>
+                </div>
+            </div>
+        </div>
+        <NavMobile />
+    </body>
+</html>
